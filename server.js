@@ -11,6 +11,6 @@ if (!baseWebhookURL) {
   process.exit(1) // Terminate the application with an error code
 }
 
-app.listen(port, () => {
+app.listen(port,"0.0.0.0", () => {
   console.log(`Server running on port ${port}`)
 })
